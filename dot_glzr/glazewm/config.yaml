@@ -114,11 +114,11 @@ keybindings:
 
   # Re-evaluate configuration file.
   - commands: ['wm-reload-config']
-    bindings: ['alt+shift+r']
+    bindings: ['alt+shift+c']
 
   # Redraw all windows.
   - commands: ['wm-redraw']
-    bindings: ['alt+shift+w']
+    bindings: ['alt+shift+r']
 
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
