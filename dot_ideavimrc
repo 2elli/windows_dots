@@ -1,0 +1,37 @@
+" plugins
+set ideajoin
+set NERDTree
+
+" set
+set relativenumber
+set scrolloff=8
+set incsearch
+set ignorecase
+
+"" maps
+let mapleader = " "
+nnoremap <SPACE> <Nop>
+" center pg up/dwn
+nmap <C-u> <C-u>zz
+nmap <C-d> <C-d>zz
+" center search
+nnoremap n nzzzv
+nnoremap N Nzzzv
+" move lines
+vnoremap <M-k> :m '<-2<CR>gv=gv
+vnoremap <M-j> :m '>+1<CR>gv=gv
+nnoremap <M-k> :m .-2<CR>==
+nnoremap <M-j> :m .+1<CR>==
+" nerdtree
+nmap <leader>e :NERDTreeToggle<CR>
+
+"" Actions
+" comments
+nmap gcc <Action>(CommentByLineComment)
+vmap gc <Action>(CommentByBlockComment)
+" file
+nmap <leader>F <Action>(GotoFile)
+" rename
+nmap grn <Action>(RenameElement)
+" format
+nmap <leader>lf <Action>(ReformatCode)
